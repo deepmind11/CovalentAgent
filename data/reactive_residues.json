@@ -1,0 +1,54 @@
+{
+  "known_druggable_cysteines": [
+    {
+      "protein": "KRAS",
+      "uniprot": "P01116",
+      "residue": "C12",
+      "position": 12,
+      "mutation": "G12C",
+      "approved_drugs": ["sotorasib", "adagrasib"],
+      "indication": "non-small cell lung cancer",
+      "notes": "KRAS G12C is the most validated covalent drug target. Mutant cysteine at position 12 is absent in wild-type, providing inherent selectivity."
+    },
+    {
+      "protein": "EGFR",
+      "uniprot": "P00533",
+      "residue": "C797",
+      "position": 797,
+      "mutation": null,
+      "approved_drugs": ["osimertinib", "afatinib"],
+      "indication": "non-small cell lung cancer",
+      "notes": "Cysteine in ATP binding site. Targeted by acrylamide warheads."
+    },
+    {
+      "protein": "BTK",
+      "uniprot": "Q06187",
+      "residue": "C481",
+      "position": 481,
+      "mutation": null,
+      "approved_drugs": ["ibrutinib", "acalabrutinib", "zanubrutinib"],
+      "indication": "B-cell malignancies",
+      "notes": "Cysteine in kinase active site. Multiple approved covalent inhibitors."
+    },
+    {
+      "protein": "KRASG12D",
+      "uniprot": "P01116",
+      "residue": "D12",
+      "position": 12,
+      "mutation": "G12D",
+      "approved_drugs": [],
+      "indication": "pancreatic cancer, colorectal cancer",
+      "notes": "No cysteine at position 12. Requires non-cysteine targeting strategies (e.g., lysine-targeting, salt bridge formation). Active area of research."
+    },
+    {
+      "protein": "PI3Kalpha",
+      "uniprot": "P42336",
+      "residue": "C862",
+      "position": 862,
+      "mutation": null,
+      "approved_drugs": [],
+      "indication": "breast cancer, other solid tumors",
+      "notes": "Frontier Medicines FMC-242 targets PI3Kalpha-RAS interaction via covalent mechanism."
+    }
+  ]
+}

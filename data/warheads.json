@@ -1,0 +1,138 @@
+{
+  "warhead_classes": [
+    {
+      "name": "Acrylamide",
+      "smarts": "[CH2]=[CH]-C(=O)-N",
+      "target_residues": ["cysteine"],
+      "reactivity": "moderate",
+      "selectivity": "high",
+      "examples": ["osimertinib", "ibrutinib", "afatinib"],
+      "mechanism": "Michael addition to cysteine thiol",
+      "notes": "Most common covalent warhead in approved drugs. Good balance of reactivity and selectivity."
+    },
+    {
+      "name": "Chloroacetamide",
+      "smarts": "ClCC(=O)N",
+      "target_residues": ["cysteine"],
+      "reactivity": "high",
+      "selectivity": "moderate",
+      "examples": ["ML162"],
+      "mechanism": "SN2 displacement by cysteine thiol",
+      "notes": "Higher reactivity than acrylamides. Used in chemical probes and early-stage drug discovery."
+    },
+    {
+      "name": "Vinyl sulfonamide",
+      "smarts": "[CH2]=[CH]-S(=O)(=O)-N",
+      "target_residues": ["cysteine", "lysine"],
+      "reactivity": "moderate",
+      "selectivity": "moderate",
+      "examples": [],
+      "mechanism": "Michael addition",
+      "notes": "Can target both cysteine and lysine residues. Tunable reactivity via substituents."
+    },
+    {
+      "name": "Cyanoacrylamide",
+      "smarts": "N#C/C=C/C(=O)N",
+      "target_residues": ["cysteine"],
+      "reactivity": "high",
+      "selectivity": "high",
+      "examples": ["PRN1371"],
+      "mechanism": "Reversible covalent Michael addition",
+      "notes": "Reversible covalent warhead. Forms thiol adduct that can dissociate, reducing off-target toxicity."
+    },
+    {
+      "name": "Propynamide",
+      "smarts": "C#CC(=O)N",
+      "target_residues": ["cysteine"],
+      "reactivity": "low",
+      "selectivity": "high",
+      "examples": [],
+      "mechanism": "Michael addition to alkyne",
+      "notes": "Low intrinsic reactivity provides high selectivity. Requires precise positioning."
+    },
+    {
+      "name": "Alpha-beta unsaturated ketone",
+      "smarts": "[CH2]=[CH]-C(=O)-C",
+      "target_residues": ["cysteine"],
+      "reactivity": "high",
+      "selectivity": "low",
+      "examples": ["bardoxolone"],
+      "mechanism": "Michael addition",
+      "notes": "High reactivity can lead to off-target effects. Used when potency is prioritized."
+    },
+    {
+      "name": "Sulfonyl fluoride",
+      "smarts": "S(=O)(=O)F",
+      "target_residues": ["serine", "lysine", "tyrosine", "cysteine"],
+      "reactivity": "moderate",
+      "selectivity": "broad",
+      "examples": ["PMSF"],
+      "mechanism": "Nucleophilic substitution at sulfur",
+      "notes": "Can target multiple nucleophilic residues. Useful for proteome-wide profiling."
+    },
+    {
+      "name": "Aryl sulfonyl fluoride",
+      "smarts": "c1ccccc1S(=O)(=O)F",
+      "target_residues": ["serine", "lysine", "tyrosine"],
+      "reactivity": "moderate",
+      "selectivity": "moderate",
+      "examples": [],
+      "mechanism": "SuFEx chemistry (sulfur-fluoride exchange)",
+      "notes": "Click chemistry-derived warhead. Growing interest for covalent probe development."
+    },
+    {
+      "name": "Epoxide",
+      "smarts": "C1OC1",
+      "target_residues": ["cysteine", "aspartate", "glutamate"],
+      "reactivity": "high",
+      "selectivity": "low",
+      "examples": ["carfilzomib", "epoxomicin"],
+      "mechanism": "Ring opening by nucleophilic residue",
+      "notes": "Potent but less selective. Used in proteasome inhibitors."
+    },
+    {
+      "name": "Nitrile",
+      "smarts": "C#N",
+      "target_residues": ["cysteine", "serine"],
+      "reactivity": "low",
+      "selectivity": "high",
+      "examples": ["saxagliptin", "nirmatrelvir"],
+      "mechanism": "Reversible covalent imine/thioimidate formation",
+      "notes": "Reversible covalent. Used in DPP-4 inhibitors and SARS-CoV-2 main protease inhibitors."
+    }
+  ],
+  "residue_properties": {
+    "cysteine": {
+      "abbreviation": "Cys",
+      "one_letter": "C",
+      "nucleophile": "thiol (-SH)",
+      "pKa": 8.3,
+      "prevalence_in_proteome": "1.9%",
+      "druggability_notes": "Most commonly targeted residue for covalent drugs. Low abundance increases selectivity potential."
+    },
+    "lysine": {
+      "abbreviation": "Lys",
+      "one_letter": "K",
+      "nucleophile": "amine (-NH2)",
+      "pKa": 10.5,
+      "prevalence_in_proteome": "5.9%",
+      "druggability_notes": "Emerging target for covalent drugs. Higher abundance makes selectivity challenging."
+    },
+    "serine": {
+      "abbreviation": "Ser",
+      "one_letter": "S",
+      "nucleophile": "hydroxyl (-OH)",
+      "pKa": 13.0,
+      "prevalence_in_proteome": "7.1%",
+      "druggability_notes": "Targeted by sulfonyl fluorides and some electrophilic warheads."
+    },
+    "tyrosine": {
+      "abbreviation": "Tyr",
+      "one_letter": "Y",
+      "nucleophile": "phenol (-OH)",
+      "pKa": 10.1,
+      "prevalence_in_proteome": "3.3%",
+      "druggability_notes": "Can be targeted by SuFEx chemistry. Less explored than cysteine."
+    }
+  }
+}

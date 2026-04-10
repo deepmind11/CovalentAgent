@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A multi-agent system for covalent drug design. Built as a portfolio project targeting Frontier Medicines (Scientist, AI Engineer role). Must demonstrate: multi-agent orchestration, MCP/tool calling, RAG pipelines, molecular property prediction, and model deployment.
+A multi-agent system for covalent drug design. Integrates multi-agent orchestration, MCP/tool calling, RAG pipelines, molecular property prediction, and model deployment.
 
 ## Architecture
 
@@ -27,8 +27,6 @@ Supervisor agent orchestrates 6 specialized agents via LangGraph + MCP:
 1. Get a working end-to-end demo first (even if agents are simple)
 2. Each agent should work independently and be testable in isolation
 3. The supervisor orchestration is the star; individual agents can wrap existing libraries
-4. README must be polished; this is the first thing hiring managers see
-5. `how_it_works.md` (gitignored) explains everything from first principles for interview prep
 
 ## Git Config
 
